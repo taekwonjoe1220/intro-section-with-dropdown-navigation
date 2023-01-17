@@ -1,17 +1,28 @@
 ul li {
     list-style-type: none;
 }
-nav, nav ul{
+
+.nav-container {
+    margin: 0 auto;
+    max-width: 980px;
+    border: 1px solid #ccc;
+}
+
+nav,
+nav ul {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: flex-start;
 }
-#featuresList, #companyList {
+
+#featuresList,
+#companyList {
     flex-direction: column;
     padding: 0;
 }
 
-#featuresList li, #companyList li {
+#featuresList.hidden,
+#companyList.hidden {
     display: none;
 }
