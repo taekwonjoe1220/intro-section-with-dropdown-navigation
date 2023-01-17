@@ -1,0 +1,17 @@
+ul li {
+    list-style-type: none;
+}
+nav, nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+#featuresList, #companyList {
+    flex-direction: column;
+    padding: 0;
+}
+
+#featuresList li, #companyList li {
+    display: none;
+}

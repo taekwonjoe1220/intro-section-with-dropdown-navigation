@@ -4,8 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- displays site properly based on user's device -->
-
+  <link rel="stylesheet" href="style.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
   <title>Frontend Mentor | Intro section with dropdown navigation</title>
@@ -26,20 +25,55 @@
 <body>
   <header>
     <nav>
+      <a href="#"><img src="./images/logo.svg" alt="the word snap (company logo)"></a>
       <ul>
-        <ul id="features">
-          <li><a href="#"><img src="" alt=""></a></li>
-        </ul>
-        <ul id="company">
+        <li id="features">
+          Features
+          <img src="./images/icon-arrow-down.svg" alt="downward arrow">
+          <ul id="featuresList">
+            <li>
+              <a href="#"><img src="./images/icon-todo.svg" alt="todo list icon">Todo List</a>
+            </li>
+            <li>
+              <a href="#"><img src="./images/icon-calendar.svg" alt="calendar icon">Calendar</a>
+            </li>
+            <li>
+              <a href="#"><img src="./images/icon-reminders.svg" alt="a gold bell (reminders icon)">Reminders</a>
+            </li>
+            <li>
+              <a href="#"><img src="./images/icon-planning.svg" alt="a purple clock (planning icon)">Planning</a>
+            </li>
+          </ul>
+        </li>
+        <li id="company">
+          Company
+          <img src="./images/icon-arrow-down.svg" alt="downward arrow">
 
-        </ul>
-        <li><a href="#">Careers</a></li>
-        <li><a href="#">About</a></li>
+          <ul id="companyList">
+            <li>
+              <a href="#">History</a>
+            </li>
+            <li>
+              <a href="#">Our Team</a>
+            </li>
+            <li>
+              <a href="#">Blog</a>
+            </li>
+          </ul>
+        </li>
+        <li id="careers"><a href="#">Careers</a></li>
+        <li id="about"><a href="#">About</a></li>
       </ul>
-
+      <ul id="linksList">
+        <li><a href="#">Login</a></li>
+        <li><a href="#" class="btn">Register</a></li>
+      </ul>
     </nav>
   </header>
 
+  <main>
+
+  </main>
   Features
   Company
   Careers
