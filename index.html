@@ -29,74 +29,80 @@
 <body>
   <header>
     <nav>
-      <a href="#"><img src="./images/logo.svg" alt="the word snap (company logo)"></a>
-      <ul class="main-nav-ul">
-        <li id="features">
-          Features
-          <img src="./images/icon-arrow-down.svg" alt="downward arrow">
-          <ul id="featuresList" class="hidden">
-            <li class="dropdown-item">
-              <a href="#"><img src="./images/icon-todo.svg" alt="todo list icon">Todo List</a>
-            </li>
-            <li class="dropdown-item">
-              <a href="#"><img src="./images/icon-calendar.svg" alt="calendar icon">Calendar</a>
-            </li>
-            <li class="dropdown-item">
-              <a href="#"><img src="./images/icon-reminders.svg" alt="a gold bell (reminders icon)">Reminders</a>
-            </li>
-            <li class="dropdown-item">
-              <a href="#"><img src="./images/icon-planning.svg" alt="a purple clock (planning icon)">Planning</a>
-            </li>
-          </ul>
-        </li>
-        <li id="company">
-          Company
-          <img src="./images/icon-arrow-down.svg" alt="downward arrow">
+      <div class="nav-container">
+        <a href="#" class="nav-item"><img src="./images/logo.svg" alt="the word snap (company logo)"></a>
+        <ul>
+          <li id="features" class="nav-item">
+            <div class="dropdown">
+              <span>
+                Features
+              </span>
+              <img src="./images/icon-arrow-down.svg" alt="downward arrow">
+            </div>
+            <ul id="featuresList" class="hidden">
+              <li class="dropdown-item">
+                <a href="#"><img src="./images/icon-todo.svg" alt="todo list icon">Todo List</a>
+              </li>
+              <li class="dropdown-item">
+                <a href="#"><img src="./images/icon-calendar.svg" alt="calendar icon">Calendar</a>
+              </li>
+              <li class="dropdown-item">
+                <a href="#"><img src="./images/icon-reminders.svg" alt="a gold bell (reminders icon)">Reminders</a>
+              </li>
+              <li class="dropdown-item">
+                <a href="#"><img src="./images/icon-planning.svg" alt="a purple clock (planning icon)">Planning</a>
+              </li>
+            </ul>
+          </li>
+          <li id="company" class="nav-item">
+            <div class="dropdown">
+              <span>
+                Company
+              </span>
+              <img src="./images/icon-arrow-down.svg" alt="downward arrow">
+            </div>
+              <ul id="companyList" class="hidden">
+                <li class="dropdown-item">
+                  <a href="#">History</a>
+                </li>
+                <li class="dropdown-item">
+                  <a href="#">Our Team</a>
+                </li>
+                <li class="dropdown-item">
+                  <a href="#">Blog</a>
+                </li>
+              </ul>
 
-          <ul id="companyList" class="hidden">
-            <li class="dropdown-item">
-              <a href="#">History</a>
-            </li>
-            <li class="dropdown-item">
-              <a href="#">Our Team</a>
-            </li>
-            <li class="dropdown-item">
-              <a href="#">Blog</a>
-            </li>
-          </ul>
-        </li>
-        <li id="careers"><a href="#">Careers</a></li>
-        <li id="about"><a href="#">About</a></li>
-      </ul>
-      <ul id="linksList" class="main-nav-ul">
-        <li><a href="#">Login</a></li>
-        <li><a href="#" class="btn">Register</a></li>
-      </ul>
+          </li>
+          <li id="careers" class="nav-item"><a href="#">Careers</a></li>
+          <li id="about" class="nav-item"><a href="#">About</a></li>
+        </ul>
+      </div>
+      <div class="links-container">
+        <ul id="linksList">
+          <li><a href="#">Login</a></li>
+          <li><a href="#" class="btn">Register</a></li>
+        </ul>
+
+      </div>
     </nav>
   </header>
 
   <main>
-
+    <h1>Make remote work</h1>
+    <p> Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch productivity soar.</p>
   </main>
-  Features
-  Company
-  Careers
-  About
 
-  Login
-  Register
 
-  Make remote work
 
-  Get your team in sync, no matter your location. Streamline processes,
-  create team rituals, and watch productivity soar.
+  <a href="#">Learn more</a>
 
-  Learn more
-
-  <div class="attribution">
+  <footer class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+    Coded by <a href="https://www.frontendmentor.io/profile/taekwonjoe1220" target="_blank">TaeKwonJoe1220</a>.
+  </footer>
+
+  
   <script src="main.js"></script>
 </body>
 
