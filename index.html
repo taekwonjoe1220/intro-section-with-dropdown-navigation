@@ -4,6 +4,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="style.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
@@ -24,24 +27,24 @@
 </head>
 
 <body>
-  <header class="nav-container">
+  <header>
     <nav>
       <a href="#"><img src="./images/logo.svg" alt="the word snap (company logo)"></a>
-      <ul>
+      <ul class="main-nav-ul">
         <li id="features">
           Features
           <img src="./images/icon-arrow-down.svg" alt="downward arrow">
           <ul id="featuresList" class="hidden">
-            <li>
+            <li class="dropdown-item">
               <a href="#"><img src="./images/icon-todo.svg" alt="todo list icon">Todo List</a>
             </li>
-            <li>
+            <li class="dropdown-item">
               <a href="#"><img src="./images/icon-calendar.svg" alt="calendar icon">Calendar</a>
             </li>
-            <li>
+            <li class="dropdown-item">
               <a href="#"><img src="./images/icon-reminders.svg" alt="a gold bell (reminders icon)">Reminders</a>
             </li>
-            <li>
+            <li class="dropdown-item">
               <a href="#"><img src="./images/icon-planning.svg" alt="a purple clock (planning icon)">Planning</a>
             </li>
           </ul>
@@ -51,13 +54,13 @@
           <img src="./images/icon-arrow-down.svg" alt="downward arrow">
 
           <ul id="companyList" class="hidden">
-            <li>
+            <li class="dropdown-item">
               <a href="#">History</a>
             </li>
-            <li>
+            <li class="dropdown-item">
               <a href="#">Our Team</a>
             </li>
-            <li>
+            <li class="dropdown-item">
               <a href="#">Blog</a>
             </li>
           </ul>
@@ -65,7 +68,7 @@
         <li id="careers"><a href="#">Careers</a></li>
         <li id="about"><a href="#">About</a></li>
       </ul>
-      <ul id="linksList">
+      <ul id="linksList" class="main-nav-ul">
         <li><a href="#">Login</a></li>
         <li><a href="#" class="btn">Register</a></li>
       </ul>
