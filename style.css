@@ -17,6 +17,7 @@ p {
 
 body {
     font-family: 'Epilogue', sans-serif;
+    background: var(--neutral-100);
 }
 
 a {
@@ -27,13 +28,14 @@ a {
 
 ul li {
     list-style-type: none;
+    font-size: 1.2rem;
 }
 
 nav {
     margin: 0 auto;
     max-width: 1440px;
-    border: 1px solid #ccc;
-    margin-top: 2rem;
+    /* border: 1px solid #ccc;
+    margin-top: 2rem; */
 }
 
 nav,
@@ -42,7 +44,7 @@ nav ul,
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
 }
 .dropdown {
     display: flex;
@@ -58,15 +60,26 @@ nav ul,
     display: inline-block;
     margin : 0 1rem;
 }
-
+#features, #company {
+    position: relative;
+}
 #featuresList,
 #companyList {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
     padding-left: 1rem;
     border: 1px solid #ccc;
     border-radius: 1rem;
     padding: 0.5rem;
+    position: absolute;
+    top: 110%;
+    right: 0;
+    z-index: 2;
+    background: #fff;
+    box-shadow: 0 0 1rem var(--neutral-500);
+    color:var(--neutral-500);
+    font-weight: 400;
 }
 #featuresList {
     width: 14rem;
@@ -93,18 +106,21 @@ nav ul,
     padding: 1rem;
     color: var(--neutral-500);
 }
-.nav-item:hover, .dropdown-item:hover {
+.dropdown-item:hover, .nav-item:hover, #linksList {
     color:var(--neutral-700);
+    font-weight: 700;
 }
 #linksList li {
     padding: 1rem;
     margin-right: 1rem;
+    color:var(--neutral-500);
 }
-#linksList li + li {
-    border-radius: 10px;
-    border: 1px solid var(--neutral-500);
-}
-#linksList li+li:hover {
+#linksList li:hover, #linksList li a:hover {
     color: var(--neutral-700);
     border-color: var(--neutral-700);
+}
+#linksList li+li a {
+    border-radius: 10px;
+    border: 1px solid var(--neutral-500);
+    padding: 1rem;
 }
